@@ -14,6 +14,7 @@ class Menu
     name = gets.chomp
     employee = Employee.new(name)
     employee.employee_info
+    employee.years_since_hire
     @people << employee
   end
 

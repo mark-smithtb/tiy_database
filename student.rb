@@ -9,9 +9,11 @@ class Student < Person
     person_info
   end
 
-
-def show
-  puts "name: #{name}"
-  puts "phone number: #{phone_number}"
-end
+  def show
+    puts "Name: #{name}"
+    puts "Phone number: #{phone_number}"
+    puts "Address: #{address}"
+    puts "Slack: #{slack_account}"
+    puts "Github: #{github_account}"
+  end
 end
