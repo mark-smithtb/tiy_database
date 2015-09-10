@@ -54,6 +54,7 @@ class Menu
      delete_choice = gets.chomp
      @poeple = @people.find do |person|
        if person.name == delete_choice
+         puts "#{person.name} has been deleted."
          @people.delete(person)
        end
      end

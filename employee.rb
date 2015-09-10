@@ -21,9 +21,9 @@ class Employee < Person
     self.date_hired = gets.chomp
   end
   def years_since_hire
-    @tenure = (Date.today - Date.parse(self.date_hired))to_i / 365
+    @tenure = (Date.today - Date.parse(self.date_hired)).to_i / 365
   end
   def show
-    puts "#{name} has been a #{position} for #{@tenure}years"
+    puts "#{name} has been a #{position} for at least #{@tenure}years"
   end
 end
